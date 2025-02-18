@@ -119,21 +119,11 @@
             </div>
             <div class="col-md-2 d_none">
               <ul class="email text_align_right">
-                <button>
-                  <a style="font-size: 15.3px; padding: 10px" href="login.html">
+                <button style="margin-right: 15px">
+                  <a style="font-size: 16.3px; padding: 10px" href="login.html">
                     Login
                   </a>
                 </button>
-                <li>
-                  <a href="Javascript:void(0)">
-                    <i
-                      class="fa fa-search"
-                      style="cursor: pointer"
-                      aria-hidden="true"
-                    >
-                    </i
-                  ></a>
-                </li>
               </ul>
             </div>
           </div>
@@ -483,12 +473,16 @@
               /></a>
             </div>
             <div class="col-md-9">
-              <form class="newslatter_form">
+              <form
+                action="newsletter.php"
+                class="newslatter_form"
+                method="post"
+              >
                 <input
                   class="ente"
                   placeholder="Enter your email"
                   type="email"
-                  name="Enter your email"
+                  name="Email"
                   required
                 />
                 <button class="subs_btn">Subscribe Now</button>

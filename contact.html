@@ -119,21 +119,11 @@
             </div>
             <div class="col-md-2 d_none">
               <ul class="email text_align_right">
-                <button>
-                  <a style="font-size: 15.3px; padding: 10px" href="login.html">
+                <button style="margin-right: 15px">
+                  <a style="font-size: 16.3px; padding: 10px" href="login.html">
                     Login
                   </a>
                 </button>
-                <li>
-                  <a href="Javascript:void(0)">
-                    <i
-                      class="fa fa-search"
-                      style="cursor: pointer"
-                      aria-hidden="true"
-                    >
-                    </i
-                  ></a>
-                </li>
               </ul>
             </div>
           </div>
@@ -149,7 +139,12 @@
             <div class="titlepage text_align_left">
               <h2>Get In Touch</h2>
             </div>
-            <form id="request" class="main_form">
+            <form
+              action="contactus.php"
+              id="request"
+              class="main_form"
+              method="post"
+            >
               <div class="row">
                 <div class="col-md-12">
                   <input
@@ -157,7 +152,7 @@
                     class="contactus"
                     placeholder="Name"
                     type="text"
-                    name=" Name"
+                    name="Name"
                     required
                   />
                 </div>
@@ -167,7 +162,7 @@
                     class="contactus"
                     placeholder="Phone Number"
                     type="tel"
-                    name="Phone Number"
+                    name="PhoneNumber"
                     required
                   />
                 </div>
@@ -188,6 +183,7 @@
                     placeholder="Message"
                     type="text"
                     Message="Name"
+                    name="Message"
                     required
                   ></textarea>
                 </div>
@@ -216,12 +212,16 @@
               /></a>
             </div>
             <div class="col-md-9">
-              <form class="newslatter_form">
+              <form
+                action="newsletter.php"
+                class="newslatter_form"
+                method="post"
+              >
                 <input
                   class="ente"
                   placeholder="Enter your email"
                   type="email"
-                  name="Enter your email"
+                  name="Email"
                   required
                 />
                 <button class="subs_btn">Subscribe Now</button>

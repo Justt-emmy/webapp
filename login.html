@@ -27,7 +27,10 @@
 
     <style>
       body {
-        background-color: rgb(2, 104, 221);
+        /* background-color: rgb(2, 104, 221); */
+        background-image: url(images/defocused-background-image-of-a-spacious-hallway-in-a-modern-office.jpg);
+        background-repeat: no-repeat;
+        background-size: 1350px;
       }
     </style>
 
@@ -120,24 +123,14 @@
             </div>
             <div class="col-md-2 d_none">
               <ul class="email text_align_right">
-                <button>
+                <button style="margin-right: 15px">
                   <a
-                    style="font-size: 15.3px; padding: 10px"
+                    style="font-size: 16.3px; padding: 10px"
                     href="signup.html"
                   >
                     Sign-up
                   </a>
                 </button>
-                <li>
-                  <a href="Javascript:void(0)">
-                    <i
-                      class="fa fa-search"
-                      style="cursor: pointer"
-                      aria-hidden="true"
-                    >
-                    </i
-                  ></a>
-                </li>
               </ul>
             </div>
           </div>
@@ -151,10 +144,11 @@
       style="background-color: white; border: solid 2px"
       class="login-container"
     >
-      <form action="form1">
+      <form action="login.php" method="post">
         <input
           style="width: 250px"
           type="text"
+          name="username"
           placeholder="Username/Email"
           required
         /><br /><br />
@@ -162,6 +156,7 @@
         <input
           style="width: 250px"
           type="text"
+          name="password"
           placeholder="Password"
           required
         /><br />
@@ -173,7 +168,7 @@
             &nbsp Remember me </label
           ><br />
 
-          <a class="forgot" href="">
+          <a class="forgot" href="reset.php">
             &nbsp &nbsp &nbsp &nbsp Forgot password?</a
           >
         </div>
